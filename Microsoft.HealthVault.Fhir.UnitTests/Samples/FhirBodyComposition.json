@@ -1,0 +1,107 @@
+﻿{
+    "resourceType": "Observation",
+    "extension": [
+        {
+            "url": "http://healthvault.com/fhir/stu3/ValueSet/fhir-extensions/thing-flags",
+            "valueString": "None"
+        },
+        {
+            "url": "http://healthvault.com/fhir/stu3/ValueSet/fhir-extensions/thing-state",
+            "valueString": "Active"
+        }
+    ],
+    "status": "final",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://hl7.org/fhir/observation-category",
+                    "code": "vital-signs",
+                    "display": "Vital Signs"
+                }
+            ],
+            "text": "Vital Signs"
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://healthvault.com/fhir/stu3/ValueSet/wc/thing-type-names",
+                "version": "1",
+                "code": "txtNamebody-composition",
+                "display": "Body composition"
+            }
+        ]
+    },
+    "effectiveDateTime": "2017-08-03T08:30:01-07:00",
+    "bodySite": {
+        "coding": [
+            {
+                "system": "http://healthvault.com/fhir/stu3/ValueSet/wc/body-composition-sites",
+                "version": "1",
+                "code": "Trunk"
+            }
+        ],
+        "text": "Trunk"
+    },
+    "method": {
+        "coding": [
+            {
+                "system": "http://healthvault.com/fhir/stu3/ValueSet/wc/body-composition-measurement-methods",
+                "version": "1",
+                "code": "DXA"
+            }
+        ],
+        "text": "DXA/DEXA"
+    },
+    "component": [
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://healthvault.com/fhir/stu3/ValueSet/wc/body-composition-measurement-names",
+                        "version": "1",
+                        "code": "fat-percent"
+                    }
+                ],
+                "text": "Body fat percentage"
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://healthvault.com/fhir/stu3/ValueSet/wc/body-composition-measurement-names",
+                        "version": "1",
+                        "code": "fat-percent"
+                    }
+                ],
+                "text": "Body fat percentage"
+            },
+            "valueQuantity": {
+                "value": 10,
+                "unit": "kg",
+                "system": "http://unitsofmeasure.org",
+                "code": "kg"
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://healthvault.com/fhir/stu3/ValueSet/wc/body-composition-measurement-names",
+                        "version": "1",
+                        "code": "fat-percent"
+                    }
+                ],
+                "text": "Body fat percentage"
+            },
+            "valueQuantity": {
+                "value": 0.15,
+                "unit": "%",
+                "system": "http://unitsofmeasure.org",
+                "code": "%"
+            }
+        }
+    ]
+}
